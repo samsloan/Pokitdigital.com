@@ -1,0 +1,160 @@
+	/* Media Query */
+
+@media screen and (max-aspect-ratio:1/1){
+	
+	/*Fixed Elements - Logo*/
+		.logo { 
+			position:fixed;
+			width: 226.22px;
+			height: 38.35px;
+			top: 32.698px;;
+			left:7.1589vmax;
+	}
+
+		.logo_title {
+			color:#efefef;
+			font-family:Montserrat-Hairline;
+			font-size:16px;
+			font-weight:600;
+			position:absolute;
+			left: 61.6016px; 
+			top: 6.2px;
+		}
+
+		.logo_image { 
+			position:absolute;
+			height:39.04px; 
+			width:39.40px;
+			bottom:1px;
+		}
+	
+	
+	/*Fixed Elements - Menu*/
+
+		.menu {
+			display:none;
+		}
+
+		.small_menu{
+			display:block;
+			position:fixed;
+			top:39.7px;
+			right:7.1589vmax;
+		}
+
+		.small_menu img {
+			height:21.538px;	
+			width:33.29px;
+			top: 50.5px;	
+		}
+	
+	
+	/*Dynamic Elements - Page 01*/
+		.header_01 {	
+			font-size:25px; 
+		}
+
+		.text_01 {
+			font-size:12px;
+		}
+	
+	
+	/*Dynamic Elements - Page 02*/
+	
+		.page_02 { 
+			position:fixed;
+			display:none;
+			justify-content: space-between;
+			flex-direction:column;
+			height:900px;
+			width:100%;
+			bottom:0;
+		}
+	
+	
+	/*Dynamic Elements - Page 02- Buff 00*/
+
+		.buff_00 {
+		display:none;
+	}
+	
+	
+	/*Dynamic Elements - Page 02- Plexus/Triggers*/
+	
+		.plexus_02 {
+			order:1;
+			position:fixed;
+			display:flex;
+			width:100%;
+			flex-direction: row;
+			height:450px;
+			flex:1;
+		}
+
+	
+	/*Dynamic Elements - Page 02- Buff 01*/
+		
+		.buff_01 { 
+		display:none;
+	}
+
+	
+	/*Dynamic Elements - Page 02- Dynamic TextBox 01*/
+	
+		.text_02 { 
+			order:1;
+			height:450px; 
+			position:relative;
+			text-align: left;
+		}
+
+	
+	/*Dynamic Elements - Page 02- buff_02*/
+		
+		.buff_02 { 
+		display:none;
+	}
+	
+	
+	/*Dynamic Elements - Page 02- dynamic headlines*/
+	
+		.headline {
+		position: relative;
+		order:1;
+		width:100%;
+		text-align: center;	
+		top:70px;
+		height:57.75px;
+		font-size: 25px;
+		font-family: Montserrat-Hairline, 
+		sans-serif; 
+		font-weight:100;
+		background: -webkit-linear-gradient(180deg,#92FE9D,#92FE9D 45%,#00C9FF 65%, #00C9FF);
+		-webkit-background-clip: text;
+	}
+	
+	
+	/*Dynamic Elements - Page 02- dynamic paragraph*/
+	
+		.paragraph {
+		order:2;
+		color:#efefef;
+		font-family:Montserrat-hairline;
+		font-size:12px;
+		font-weight:900;
+		text-align: center;
+		position:relative;
+		width:100%;
+		top:80px;
+	}
+
+	/*Dynamic Elements - Side Menu*/
+
+		div.side_menu { 
+		top:38.035vmax;
+		}
+	
+}
+
+
+

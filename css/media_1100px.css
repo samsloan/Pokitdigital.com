@@ -1,0 +1,90 @@
+/* Media Query */
+
+	@media screen and (max-width:1100px) {
+	
+	/*Fixed Elements - Menu*/
+
+		.menu {
+			position:fixed;
+			width:640.24px;
+			height:38.505px;
+			right:3vmin;
+			top:28.698px;;
+		}
+
+		.work {
+			position:absolute;
+			height:38.505px;
+			width: 41.56px;
+			top:10.79px;
+			left:146.85px;
+		}
+
+		.work_link {
+			color:#efefef;
+			font-family:Montserrat-Hairline;
+			font-size:16px;
+			font-weight:600;
+			width: 433.1px;   
+		}
+
+		.company { 
+			position:absolute;
+			top:10.79px;
+			height:38.505px;
+			left:247.87px;
+		}
+
+		.company_link { 
+			color:#efefef;
+			font-family:Montserrat-Hairline;
+			font-size:16px;
+			font-weight:600;
+			width:81.8px;
+			top:10.7807px;
+		}
+
+		.blog {
+			position:absolute;
+			top:10.79px;
+			left:391.78px;
+			height:38.505px;   
+		}
+
+		.blog_link { 
+			color:#efefef;
+			font-family:Montserrat-Hairline;
+			font-size:16px;
+			font-weight:600;
+			width:38.51px;   
+		}
+
+		.get_started { 
+			width:127.43px;
+			height:28.29px;
+			border-style : Solid;
+			border-color : #EFEFEF;
+			border-color : rgba(239, 239, 239, 1);
+			border-width : 0.1em;
+			border-radius : 7.5px;
+			-moz-border-radius : 7.5px;
+			-webkit-border-radius : 7.5px;
+			position:relative;
+			left:491.9px;
+			top:7.9px;
+		}
+
+		.get_started_link {
+			font-family:Montserrat-Light;
+		font-size:16px;
+		font-weight:300;
+		background: -webkit-linear-gradient(180deg,#92FE9D,#92FE9D 45%,#00C9FF 65%, #00C9FF);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position:relative;
+		top:2.5px;
+		left:18px;
+		}
+
+	}
+
