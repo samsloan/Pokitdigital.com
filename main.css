@@ -325,16 +325,17 @@ html {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: nowrap;
-    height: 100%;
-    padding-left: 30px;
+    margin-right:20px;
 }
 .top_plexus {
     order: 0;
-    flex: 1;
+    flex: 0.7;
+    min-height:0px;
 }
 .plexus_wrap {
     flex: 1;
     order: 1;
+    min-width:20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -343,29 +344,32 @@ html {
 }
 .bottom_plexus {
     order: 2;
-    flex: 1.5;
+    flex: 1;
 }
 /*Menu Flex Container*/
 
-.plexus_graphic {
-    order: 0;
-}
+
 .plexus_menu {
     position: relative;
-    order: 1;
+    order: 0;
     height: 180px;
     width: 20px;
 }
 
 #box_one { 
     margin-top:15px;
-
 }
+
 .list_box {
     position: relative;
     width: 20px;
     height: 20px;
     border: 1px solid #979797;
+    color:#979797;
+    text-align:center;
+    line-height:18px;
+    font-family:montserrat-light;
+    font-weight: 100;
 }
 .list_line {
     position: relative;
@@ -448,7 +452,7 @@ html {
 .text_02_top {
     order: 1;
     flex: 0.60;
-    max-height: ;
+    min-heihgt:0px;
 }
 .text_02_container {
     order: 1;
@@ -545,7 +549,7 @@ html {
     text-align: left;
     display: inline-block;
     height: 60px;
-    font-size: 44.25px;
+    font-size: 40px;
     font-family: Montserrat-Hairline, sans-serif;
     font-weight: 100;
     background: -webkit-linear-gradient(180deg, #92FE9D, #92FE9D 45%, #00C9FF 65%, #00C9FF);
@@ -559,6 +563,8 @@ html {
 top:-30px;
     
 }
+
+
 .paragraph {
     color: #efefef;
     font-family: Montserrat-hairline;
@@ -595,6 +601,7 @@ top:-30px;
 }
 .list_select_02 {
     display: none;
+    margin-top:38px;
 }
 
 .list_select_03 {
@@ -688,19 +695,14 @@ top:-30px;
 }
 .graphic_container_01 {
     order: 1;
-    display:none;
+    display:flex;
 }
 .graphic_container_02 {
     order: 2;
-    display:none;
+    display:flex;
     margin-top:30px;
 }
 
-.graphic_container_03 {
-    
-    display:none;
-   
-}
 .graphic_box {
     order: 1;
     flex: 1;
@@ -1141,9 +1143,48 @@ text-decoration:none;
 /*Dynamic- Page02*/
 
 @media screen and (max-width: 740px) {
-    .plexus_02 {
-        display: none;
+    .plexus_02{ 
+    flex:0;
+    min-width:0px;
+    
+    
     }
+    
+    .plexus_div{ 
+    display:block;
+    position:relative;
+    left:-30px;
+    width:20px;
+    height:20px;
+    opacity:0.0;
+    }
+    
+    .plexus_div_02 {
+        
+    }
+    
+    .plexus_div_03 {
+       margin-top:20px; 
+    }
+    
+    .plexus_div_04 {
+        margin-top:20px; 
+    }
+    
+    .plexus_div_05 {
+        margin-top:20px; 
+    }
+    
+    .plexus_div_06 {
+        margin-top:20px; 
+    } 
+    
+    .paragraph_02 { 
+    margin-top:0px;
+    }
+    
+    
+    
     .text_02_top {
         flex: 0.6;
     }
@@ -1193,6 +1234,10 @@ text-decoration:none;
     .logo_title {
         visibility: hidden;
    }
+    
+    .textbox_menu_div { 
+        display:none;
+    }
   
 }
 /*End Pokit CSS*/

@@ -101,7 +101,7 @@ function pageScroll() {
                 });
                 
                
-                $('.contain_01_03, .contain_02_03, .contain_03_03, .contain_04_03, .contain_05_03, .graphic_01_03, .graphic_02_03, .graphic_03_03').css('display', 'none')
+                $('.contain_01_03, .contain_02_03, .contain_03_03, .contain_04_03, .contain_05_03, .graphic_00_03, .graphic_01_03, .graphic_00_04').css('display', 'none')
                 
                 $('.contain_00_03').css('display', 'block')
 
@@ -270,7 +270,7 @@ function pageScroll() {
                     $('#p_4').toggleClass('standard highlighted');
                 }
 
-                 $('.contain_01_03, .contain_02_03, .contain_03_03, .contain_04_03, .contain_05_03, .graphic_01_03, .graphic_02_03, .graphic_03_03').css('display', 'none')
+                 $('.contain_01_03, .contain_02_03, .contain_03_03, .contain_04_03, .contain_05_03, .graphic_00_03, .graphic_01_03, .graphic_00_04, .graphic_05_04').css('display', 'none')
                 
                 $('.contain_00_03').css('display', 'block')
 
@@ -338,10 +338,7 @@ function getStarted(){
                 $('.page_select').animate({
                     top: '+=192.1916px'
                 })
-                
-                
                 break;
-                
         
         
             case 1:
@@ -350,14 +347,6 @@ function getStarted(){
                 $('.page_select').animate({
                     top: '+=144.1437px'
                 })
-                
-                 $('.contain_01, .contain_02, .contain_03, .contain_04, .contain_05').css('display', 'none')
-                
-                $('.contain_00').css('display', 'block')
-                
-               services_page = 'capabilities';
-                
-                
                 break;
         
             case 2:
@@ -366,13 +355,7 @@ function getStarted(){
                 $('.page_select').animate({
                     top: '+=96.0958px'
                 })
-                
-                $('.contain_01_03, .contain_02_03, .contain_03_03, .contain_04_03, .contain_05_03, .graphic_01_03, .graphic_02_03, .graphic_03_03').css('display', 'none')
-                
-                $('.contain_00_03').css('display', 'block')
-                
-                p4page = 1
-                
+        
                 break;
       
             case 3:
@@ -424,33 +407,27 @@ function fadePara() {
 
             ////$('.contain_00').fadeOut();
             $('.contain_00').css('display', 'block')
-            
 
         case 'design':
             /////$('.contain_01').fadeOut();
             $('.contain_01').css('display', 'none')
-            
 
         case 'development':
-            ///$('.contain_02').fadeOut();
+            /////$('.contain_02').fadeOut();
             $('.contain_02').css('display', 'none')
-           
 
         case 'branding':
             ////$('.contain_03').fadeOut();
             $('.contain_03').css('display', 'none')
-            
 
 
         case 'marketing':
             ////$('.contain_04').fadeOut();
             $('.contain_04').css('display', 'none')
-            
 
         case 'production':
             ////$('.contain_05').fadeOut();
             $('.contain_05').css('display', 'none')
-            
 
 
 
@@ -734,10 +711,7 @@ function p3Menu() {
                 $('.contain_00_03').fadeOut(200).css('display, none');
                 
                 setTimeout(function() {
-                    
                 $('.contain_01_03').fadeIn(200);
-                $('.graphic_01_03').css('display, flex');
-                $('.graphic_01_03').hide;
                 $('.graphic_01_03').fadeIn(200);
                 },200
                         );
@@ -752,12 +726,9 @@ function p3Menu() {
                 $('.contain_00_03').fadeOut(200).css('display, none');
                 $('.contain_01_03').fadeOut(200);
                 $('.graphic_01_03').fadeOut(200);
-                $('.graphic_01_03').css('display, none');
                 
                 setTimeout(function() {
                 $('.contain_02_03').fadeIn(200);
-                $('.graphic_02_03').css('display, flex');
-                $('.graphic_02_03').hide;
                 $('.graphic_02_03').fadeIn(200);
                 },200
                         );
@@ -769,12 +740,9 @@ function p3Menu() {
                 $('.contain_00_03').fadeOut(200).css('display, none');
                 $('.contain_02_03').fadeOut(200);
                 $('.graphic_02_03').fadeOut(200);
-                $('.graphic_02_03').css('display, none');
                 
                 setTimeout(function() {
                 $('.contain_03_03').fadeIn(200);
-                 $('.graphic_03_03').css('display, flex');
-                $('.graphic_03_03').hide;
                 $('.graphic_03_03').fadeIn(200);
                 },200
                         );
@@ -798,11 +766,10 @@ function p3Menu() {
                 
                 $('.contain_01_03').fadeOut(200);
                 $('.graphic_01_03').fadeOut(200);
-                $('.graphic_01_03').css('display, none');
                 
                 setTimeout(function() {
                 $('.contain_00_03').fadeIn(200);
-                
+                $('.graphic_00_03').fadeIn(200);
                 },200
                         );
                 p4page = 1
@@ -812,12 +779,9 @@ function p3Menu() {
             case 3:
                 $('.contain_02_03').fadeOut(200);
                 $('.graphic_02_03').fadeOut(200);
-                $('.graphic_02_03').css('display, none');
                 
                 setTimeout(function() {
                 $('.contain_01_03').fadeIn(200);
-                $('.graphic_01_03').css('display, flex');
-                $('.graphic_01_03').hide;
                 $('.graphic_01_03').fadeIn(200);
                 },200
                         );
@@ -831,12 +795,9 @@ function p3Menu() {
                 
                 $('.contain_03_03').fadeOut(200);
                 $('.graphic_03_03').fadeOut(200);
-                $('.graphic_03_03').css('display, none');
                 
                 setTimeout(function() {
                 $('.contain_02_03').fadeIn(200);
-                $('.graphic_02_03').css('display, flex');
-                $('.graphic_02_03').hide;
                 $('.graphic_02_03').fadeIn(200);
                 },200
                         );
@@ -911,12 +872,8 @@ $(document).ready(function() {
         } else {
             console.log('elsed lad')
             fadePara()
-            $('.list_box').css('border-color', '#979797')
-            $('.list_box').css('color', '#979797')
             $('.contain_01').css('display', 'block')
             $('.contain_00').css('display', 'none')
-            $('#box_one').css('border-color', '#efefef')
-            $('#box_one').css('color', '#efefef')
             services_page = 'design'
 
         }
@@ -934,12 +891,8 @@ $(document).ready(function() {
         } else {
             console.log('elsed lad')
             fadePara()
-            $('.list_box').css('border-color', '#979797')
-            $('.list_box').css('color', '#979797')
             $('.contain_02').css('display', 'block')
             $('.contain_00').css('display', 'none')
-            $('#box_two').css('border-color', '#efefef')
-            $('#box_two').css('color', '#efefef')
             services_page = 'development'
 
         }
@@ -954,12 +907,8 @@ $(document).ready(function() {
             return (0)
         } else {
             fadePara()
-            $('.list_box').css('border-color', '#979797')
-            $('.list_box').css('color', '#979797')
             $('.contain_03').css('display', 'block')
             $('.contain_00').css('display', 'none')
-            $('#box_three').css('border-color', '#efefef')
-            $('#box_three').css('color', '#efefef')
             services_page = 'branding'
 
         }
@@ -974,12 +923,8 @@ $(document).ready(function() {
             return (0)
         } else {
             fadePara()
-            $('.list_box').css('border-color', '#979797')
-            $('.list_box').css('color', '#979797')
             $('.contain_04').css('display', 'block')
             $('.contain_00').css('display', 'none')
-            $('#box_four').css('border-color', '#efefef')
-            $('#box_four').css('color', '#efefef')
             services_page = 'marketing'
 
         }
@@ -994,13 +939,9 @@ $(document).ready(function() {
             return (0)
         } else {
             fadePara()
-            $('.list_box').css('border-color', '#979797')
-            $('.list_box').css('color', '#979797')
             $('.contain_05').css('display', 'block')
             $('.contain_00').css('display', 'none')
             services_page = 'production'
-            $('#box_five').css('border-color', '#efefef')
-            $('#box_five').css('color', '#efefef')
         
 
         }
@@ -1011,17 +952,17 @@ $(document).ready(function() {
 });
 
 
-     $('.plexus_div').click(function() {
+$('.plexus_div').click(function() {
 
-                $('.list_select_00, .list_select_01, .list_select_02, .list_select_03, .list_select_04, .list_select_05').fadeOut('slow')
+                $('.list_select_00, .list_select_01, .list_select_02, .list_select_03, .list_select_04').fadeOut('slow')
 
-                $('.list_select_00, .list_select_01, .list_select_02, .list_select_03, .list_select_04, .list_select_05').css('display', 'none')
+                $('.list_select_00, .list_select_01, .list_select_02, .list_select_03, .list_select_04').css('display', 'none')
 
-                $('.para_00, .para_01, .para_02, .para_03, .para_04, .para_05').css('display', 'block')
+                $('.para_00, .para_01, .para_02, .para_03, .para_04').css('display', 'block')
 
-                $('.para_00, .para_01, .para_02, .para_03, .para_04, .para_05').hide()
+                $('.para_00, .para_01, .para_02, .para_03, .para_04').hide()
 
-                $('.para_00, .para_01, .para_02, .para_03, .para_04, .para_05').fadeIn('slow')
+                $('.para_00, .para_01, .para_02, .para_03, .para_04').fadeIn('slow')
 
                 $('.about').css('color', '#979797')
 
